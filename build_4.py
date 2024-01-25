@@ -3,7 +3,7 @@ import os
 
 def docker_build():
     os.chdir("/root/vishal/tensorrtllm_backend")
-    os.system("DOCKER_BUILDKIT=1 docker build -t triton_trt_llm_v -f dockerfile/Dockerfile.trt_llm_backend .")
+    os.system("DOCKER_BUILDKIT=1 docker build -t triton_trt_llm_v1 -f dockerfile/Dockerfile.trt_llm_backend .")
     # os.system("DOCKER_BUILDKIT=1 docker build -t triton_trt_llm_vishal -f dockerfile/Dockerfile.trt_llm_v .")
 
 
