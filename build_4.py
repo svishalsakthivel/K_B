@@ -3,7 +3,7 @@ import os
 
 def docker_build():
     # os.system("DOCKER_BUILDKIT=1 docker build -t triton_trt_llm -f dockerfile/Dockerfile.trt_llm_backend .")
-    os.system("DOCKER_BUILDKIT=1 docker build -t triton_trt_llm_vishal -f dockerfile/dockerfile.vishal_trt_llm .")
+    os.system("DOCKER_BUILDKIT=1 docker build -t triton_trt_llm_vishal -f dockerfile/Dockerfile.trt_llm_v .")
 
 
 def docker_run():
