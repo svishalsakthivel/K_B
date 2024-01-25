@@ -2,6 +2,7 @@ import os
 
 
 def docker_build():
+    os.system("cp /root/vishal_build/Dockerfile.trt_llm_backend  ~/vishal/tensorrtllm_backend/dockerfile/Dockerfile.trt_llm_backend")
     os.chdir("/root/vishal/tensorrtllm_backend")
     os.system("DOCKER_BUILDKIT=1 docker build -t triton_trt_llm_v1 -f dockerfile/Dockerfile.trt_llm_backend .")
     # os.system("DOCKER_BUILDKIT=1 docker build -t triton_trt_llm_vishal -f dockerfile/Dockerfile.trt_llm_v .")
